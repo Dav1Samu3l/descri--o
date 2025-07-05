@@ -3,56 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
   <title>Estratégia da SAP</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px 16px;
+      z-index: 1000;
+      text-decoration: none;
+    }
 
+    .skip-link:focus {
+      top: 0;
+    }
+
+    :focus {
+      outline: 2px solid #005ea2;
+      outline-offset: 2px;
+    }
+  </style>
 </head>
 <body>
+  <!-- Skip link acessível para leitores de tela -->
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo principal</a>
+
   <header role="banner">
-    <h1>Conteúdo do video ‘Estratégia da SAP: Visão de Ponta a Ponta’.</h1>
+    <h1>Estratégia da SAP: Visão de Ponta a Ponta</h1>
   </header>
 
   <nav role="navigation" aria-label="Navegação principal">
     <ul>
       <li><a href="#objetivo">Objetivo</a></li>
       <li><a href="#visao">Visão Estratégica</a></li>
-      <li><a href="#componentes">Componentes-Chave</a></li>
-      <li><a href="#execucao">Execução da Estratégia</a></li>
+      <li><a href="#componentes">Componentes</a></li>
+      <li><a href="#execucao">Execução</a></li>
     </ul>
   </nav>
 
-  <main role="main">
-    <section id="objetivo">
+  <main id="conteudo" role="main">
+    <section id="objetivo" tabindex="0">
       <h2>Objetivo</h2>
       <p>Explicar a visão geral da estratégia corporativa da SAP, com ênfase no impacto de ponta a ponta.</p>
     </section>
 
-    <section id="visao">
+    <section id="visao" tabindex="0">
       <h2>Visão Estratégica da SAP</h2>
-      <p>Desde 2020, a SAP reformulou sua estratégia, com foco em nuvem, agilidade, sustentabilidade e inteligência artificial. O propósito é claro: ajudar o mundo a funcionar melhor e melhorar a vida das pessoas.</p>
+      <p>Desde 2020, a SAP reformulou sua estratégia com foco em nuvem, agilidade, sustentabilidade e IA. O propósito é ajudar o mundo a funcionar melhor e melhorar a vida das pessoas.</p>
     </section>
 
-    <section id="componentes">
+    <section id="componentes" tabindex="0">
       <h2>Componentes-Chave da Estratégia</h2>
+
       <h3>1. Aplicações</h3>
-      <p>Aplicações integradas, específicas por setor, que conectam profundamente os processos dos clientes.</p>
+      <p>Aplicações integradas e específicas por setor conectam profundamente os processos dos clientes.</p>
 
       <h3>2. Dados</h3>
-      <p>A SAP Business Data Cloud transforma dados em insights valiosos, promovendo IA confiável.</p>
+      <p>A Business Data Cloud transforma dados em insights valiosos, promovendo IA confiável.</p>
 
       <h3>3. Inteligência Artificial</h3>
-      <p>Com a SAP Business AI, agentes colaborativos otimizam operações e decisões em tempo real.</p>
+      <p>Agentes colaborativos otimizam operações e decisões em tempo real com SAP Business AI.</p>
     </section>
 
-    <section id="execucao">
-      <h2>Execução e Prioridades Estratégicas</h2>
-      <p>A execução se apoia em três áreas funcionais:</p>
+    <section id="execucao" tabindex="0">
+      <h2>Execução da Estratégia</h2>
+      <p>Dividida em três áreas principais:</p>
       <ul>
         <li><strong>Produto:</strong> IA em Primeiro Lugar</li>
-        <li><strong>Go-to-Market:</strong> RISE e GROW como motores de crescimento</li>
-        <li><strong>Funções Corporativas:</strong> Cultura de Crescimento e simplificação</li>
+        <li><strong>Go-to-Market:</strong> Acelerar RISE e GROW</li>
+        <li><strong>Funções Corporativas:</strong> Foco em cultura, simplificação e fluxo de caixa</li>
       </ul>
-      <p>Programas de Foco incluem Inovação de Próxima Geração, Adoção e Consumo, Crescimento SaaS, Simplificação e Cultura de Crescimento.</p>
+      <p>Programas de Foco incluem Inovação, Adoção, SaaS, Simplificação e Cultura de Crescimento.</p>
     </section>
   </main>
 
